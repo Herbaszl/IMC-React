@@ -13,7 +13,6 @@ const Formulario = () => {
         if (peso > 0 && altura > 0){
             const alturaEmMetros = altura / 100;
             const imcCalculado = (peso / (alturaEmMetros * alturaEmMetros)).toFixed(2)
-            console.log(`Altura em metros: ${alturaEmMetros}, Peso: ${peso}, IMC Calculado: ${imcCalculado}`);
             setImc(imcCalculado);
         }
     };
